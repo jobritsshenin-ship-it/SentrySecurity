@@ -6,6 +6,7 @@ import { env } from '@/config/env';
 import { requestIdMiddleware } from '@/middleware/requestId';
 import { errorHandler } from '@/middleware/errorHandler';
 import { logger } from '@/utils/logger';
+import routes from '@/routes';
 
 export const createApp = (): Express => {
   const app = express();
