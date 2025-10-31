@@ -57,7 +57,8 @@ export const createApp = (): Express => {
     next();
   });
 
-  // Routes (will be added by server.ts)
+  // Routes
+  app.use('/api/v1', routes);
 
   // Health check endpoint
   app.get('/health', (req, res) => {
